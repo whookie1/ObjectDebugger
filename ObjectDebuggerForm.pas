@@ -1228,7 +1228,21 @@ procedure TCantObjDebForm.EditNumExit(Sender: TObject);
 begin
   try
     if EditModified then
+    begin
+//      OutputDebugString(PChar('EditModified = TRUE'));
+//      if Assigned(CurrComp) then
+//      begin
+//        OutputDebugString(PChar('  CurrComp = Assigned'));
+//        OutputDebugString(PChar(Format('   Symbolname: "%s"', [CurrProp.Name])));
+//        OutputDebugString(PChar(Format('   Changed value: "%s"', [EditNum.Text])));
+//        OutputDebugString(PChar(Format('   CurrComp: "%s"', [CurrComp.ClassName ])));
+//        OutputDebugString(PChar(Format('   CurrComp: "%s"', [CurrComp.Name ])));
+//      end
+//      else
+//        OutputDebugString(PChar('  CurrComp = NIL'));
+
       SetOrdProp (CurrComp, CurrProp, StrToInt (EditNum.Text));
+    end;
     RefreshOnExit (Sender);
   except
     on EConvertError do
