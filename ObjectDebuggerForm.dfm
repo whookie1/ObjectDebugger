@@ -24,7 +24,7 @@ object CantObjDebForm: TCantObjDebForm
     Top = 85
     Width = 320
     Height = 414
-    ActivePage = TabSheet1
+    ActivePage = TabSheet3
     Align = alClient
     TabOrder = 1
     OnChange = PageControl1Change
@@ -114,7 +114,7 @@ object CantObjDebForm: TCantObjDebForm
         DefaultRowHeight = 18
         FixedCols = 0
         RowCount = 12
-        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine]
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goThumbTracking]
         ScrollBars = ssVertical
         TabOrder = 0
         OnDblClick = sgPropDblClick
@@ -152,7 +152,7 @@ object CantObjDebForm: TCantObjDebForm
         DefaultRowHeight = 18
         FixedCols = 0
         RowCount = 12
-        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goColSizing]
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goColSizing, goThumbTracking]
         ScrollBars = ssVertical
         TabOrder = 0
         OnMouseDown = sgDataMouseDown
@@ -189,7 +189,7 @@ object CantObjDebForm: TCantObjDebForm
         DefaultRowHeight = 18
         FixedCols = 0
         RowCount = 12
-        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goColSizing]
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goColSizing, goThumbTracking]
         ScrollBars = ssVertical
         TabOrder = 0
         OnMouseDown = sgDataMouseDown
