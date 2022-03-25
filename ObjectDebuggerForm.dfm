@@ -250,10 +250,12 @@ object CantObjDebForm: TCantObjDebForm
       Width = 312
       Height = 21
       Align = alTop
+      DoubleBuffered = True
       Images = ImageList1
       LeftButton.Enabled = False
       LeftButton.ImageIndex = 1
       LeftButton.Visible = True
+      ParentDoubleBuffered = False
       RightButton.Hint = 'Clear the filter'
       RightButton.ImageIndex = 0
       RightButton.Visible = True
